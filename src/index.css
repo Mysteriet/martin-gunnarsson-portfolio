@@ -1,23 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0a192f;
+  --accent-color: #ffbd59;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+  a {
+    @apply cursor-pointer;
+  }
 }
 
-html {
-  overflow: scroll;
-  overflow-x: hidden;
+.navbar {
+  @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-primary-color text-gray-300;
 }
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: #ff0000;
+
+.content-div:hover {
+  background-image: linear-gradient(to right, rgba(112, 157, 255, 0.8), hsla(242, 74%, 61%, 0.8)) !important;
+}
+
+.underlined:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+.underlined:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+.shadow {
+  @apply shadow-2xl shadow-[#040c16] ease-in-out duration-1000;
 }
