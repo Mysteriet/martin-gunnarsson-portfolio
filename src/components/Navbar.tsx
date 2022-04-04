@@ -27,35 +27,35 @@ export default function Navbar() {
   return (
     <div className={topOfPage ? "navbar" : "navbar shadow"}>
       <div>
-        <Link to="home" smooth={true} duration={500}>
+        <Link to="home" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
           <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
         </Link>
       </div>
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="underlined">
-          <Link to="home" smooth={true} duration={500}>
+        <li className="underlined-animation">
+          <Link to="home" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Home
           </Link>
         </li>
-        <li className="underlined">
-          <Link to="about" smooth={true} duration={500}>
+        <li className="underlined-animation">
+          <Link to="about" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             About
           </Link>
         </li>
-        <li className="underlined">
-          <Link to="skills" smooth={true} duration={500}>
+        <li className="underlined-animation">
+          <Link to="skills" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="underlined">
-          <Link to="projects" smooth={true} duration={500}>
+        <li className="underlined-animation">
+          <Link to="projects" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Projects
           </Link>
         </li>
-        <li className="underlined">
-          <Link to="contact" smooth={true} duration={500}>
+        <li className="underlined-animation">
+          <Link to="contact" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Contact
           </Link>
         </li>
@@ -69,31 +69,31 @@ export default function Navbar() {
       {/* Mobile menu */}
       <ul className={!showNavbar ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-primary-color flex flex-col justify-center items-center"}>
         <li className="py-6 text-4xl">
-          <Link onClick={handleNavbarClick} to="home" smooth={true} duration={500}>
+          <Link onClick={handleNavbarClick} to="home" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleNavbarClick} to="about" smooth={true} duration={500}>
+          <Link onClick={handleNavbarClick} to="about" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleNavbarClick} to="skills" smooth={true} duration={500}>
+          <Link onClick={handleNavbarClick} to="skills" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleNavbarClick} to="work" smooth={true} duration={500}>
+          <Link onClick={handleNavbarClick} to="work" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Work
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link onClick={handleNavbarClick} to="contact" smooth={true} duration={500}>
+          <Link onClick={handleNavbarClick} to="contact" smooth={true} spy={true} activeClass={"underlined"} duration={500}>
             Contact
           </Link>
         </li>

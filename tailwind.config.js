@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         "primary-color": "var(--primary-color)",
         "accent-color": "var(--accent-color)",
+        "accent-color-dark": "var(--accent-color-dark)",
       },
     },
   },
