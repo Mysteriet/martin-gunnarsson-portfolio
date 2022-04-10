@@ -60,6 +60,18 @@
   @apply shadow-2xl shadow-[#040c16] ease-in-out duration-1000;
 }
 
+.sub-header {
+  @apply text-4xl font-bold inline border-b-4 border-accent-color;
+}
+
+.skills-card {
+  @apply shadow-md shadow-[#040c16] hover:scale-110 duration-500;
+}
+
+.skills-card > img {
+  @apply w-20 m-auto;
+}
+
 /************ Scrollbar below *************/
 ::-webkit-scrollbar {
   width: 10px;
