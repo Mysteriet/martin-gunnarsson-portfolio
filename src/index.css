@@ -26,6 +26,26 @@
   @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-primary-color text-gray-300 z-10;
 }
 
+.social-icons {
+  @apply w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300;
+}
+
+.social-icons > a {
+  @apply flex justify-between items-center w-full text-gray-300;
+}
+
+.mobile-navbar {
+  @apply absolute top-0 left-0 w-full h-screen bg-primary-color flex flex-col justify-center items-center;
+}
+
+.mobile-menu-links {
+  @apply py-6 text-4xl;
+}
+
+.section {
+  @apply w-full h-screen bg-primary-color;
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,6 +90,10 @@
 
 .skills-card > img {
   @apply w-20 m-auto;
+}
+
+.center-items {
+  @apply flex justify-center items-center;
 }
 
 /************ Scrollbar below *************/
