@@ -12,6 +12,6 @@ and built with <a href="https://vitejs.dev/">Vite</a>.
   <a href="https://nodejs.org/en/blog/release/v16.13.0/"><img alt="NodeJS" src="https://img.shields.io/badge/node-16.13.0-important?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/npm/v/8.1.4"><img alt="NPM" src="https://img.shields.io/badge/npm-8.1.4-blueviolet?style=flat-square" /></a>
   <a href="https://reactjs.org/"><img alt="Made With React" src="https://img.shields.io/badge/made%20with-react-61DAFB?style=flat-square" /></a> 
-  <a href="http://badges.mit-license.org/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
+  <a href="https://mysteriet.github.io/martin-gunnarsson-portfolio/"><img alt="Website" src="https://img.shields.io/badge/website-up-green?style=flat-square" /></a>
 
 </p>

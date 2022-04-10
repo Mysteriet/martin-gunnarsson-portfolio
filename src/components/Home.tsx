@@ -3,7 +3,7 @@ import { Link } from "react-scroll"
 
 export default function Home() {
   return (
-    <div id="home" className="section">
+    <div name="home" className="w-full h-screen bg-primary-color">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-accent-color">Hi, my name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">Martin Gunnarsson</h1>
