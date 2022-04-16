@@ -9,7 +9,7 @@ export default function Contact() {
   }
 
   return (
-    <div id="contact" className="w-full h-screen bg-primary-color flex justify-center items-center p-4">
+    <div id="contact" className="section center-items p-4">
       <form method="POST" action="" className="flex flex-col max-w-[600px] w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-accent-color text-gray-300">Contact</p>
